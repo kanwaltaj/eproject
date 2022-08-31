@@ -1,0 +1,744 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Food</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/Keansberg Park.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .bgimg{
+        background-image: url(../images/foodback.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 680px;
+        }
+        
+        .header-set{
+          padding-top: 200px;
+          box-sizing: border-box;
+        
+        }
+
+        .card{
+          margin-bottom: 5px;
+        }
+        li a:hover{
+  background-color: rgb(241, 241, 12);
+    border-radius: 20px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+        </style>
+ </head>
+ <body>
+    <div class="bgimg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="../keansberg.html">
+                        <img src="../images/Keansberg Park.png" alt="" width="100px" height="94px">
+                      </a>
+                    </div>
+                  </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../keansberg.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="ride.html">Rides and Attraction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="ticket.html">Tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="food.html">Food</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="contactus.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="review.html">Review and Ratings</a>
+                  </li>
+                  <a href="../pages/cart.html" class="fa fa-shopping-cart" id="demo0" style="margin-left: 20px; margin-top: 12px;color: black; width: 50px; height: 50px;"></a>
+                  <a type="button" class="btn btn-outline-primary" href="account.html" style="color: black; height: 40px; width: 180px; margin-right: 3px; margin-bottom: 9px;"><b>Register now!</b></a>
+              
+                  <a type="button" class="btn btn-success" href="login.html" style="color: black; height: 40px; width: 180px; margin-left: 2px; margin-bottom: 9px;"><b>Log in</b></a>
+                
+                
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+    
+          <div class="header-set" ></div>
+          <h1 style=" color:white; font-size: 68px;" class="animate__animated animate__bounceIn animate__slow"><b>HUNGRY?!</b></h1>
+      <h4 style= "color:white; font-size: 32px;"class="animate__animated animate__shakeY animate__slow" >Good, We are here to serve you..</h4>
+</div>
+<div class="container px-4">
+  <div class="row gx-5">
+    <h4>Your Total Amount</h4>
+    <div class="col">
+     <div class="p-3 border bg-light" id="demo"><h4 id="demo"></h4></div>
+    </div>
+
+  </div>
+</div>
+<br>
+<h1 style="background-color:rgb(235, 8, 8) ;color: white; text-align: center;font-size: 40px;margin-left: 30%; margin-right: 30%;">OUR MENU</h1>
+      <br>
+<div class="container"  data-aos="zoom-in-up">
+<div class="row">
+      <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/fastfood.jpeg" class="img-fluid rounded-start" alt="..." >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Delicious FastFood</h5>
+              <p class="card-text">Fast food is typically loaded with calories, sodium, and unhealthy fat—often enough in one meal for an entire day. It also tends to be low in nutrients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/italian food.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Italian food</h5>
+              <p class="card-text">Italian cuisine has a great variety of different ingredients which are commonly used, ranging from fruits, vegetables, grains, cheeses, meats and fish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/chinese food.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Chinese food</h5>
+              <p class="card-text">Traditional Chinese food has to always be fresh. Most dishes are filled with huge quantities of vegetables, grass-fed meats, seafood and herbs and spices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/apetizer.jpeg" class="img-fluid rounded-start" alt="..." >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Appetizer</h5>
+              <p class="card-text">appetizer, food eaten to pique the appetite or to moderate the hunger stimulated by drink. Cocktails, especially aperitifs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+
+      <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/desert.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Deserts</h5>
+              <p class="card-text">Various deserts Numerous (biscuits, cakes, tarts, cookies, sandeshs, gelatins, ice creams, pastries, pies, puddings, custards, sweet soups, fruits etc.)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3" style="max-width: 500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../images/Drinks.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Drinks</h5>
+              <p class="card-text">Juice is a drink made from the extraction or pressing of the natural liquid contained in fruit and vegetables. It can also refer to liquids that are flavored .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <br>
+    <h1 style="text-align: center;"><b><U>FASTFOOD MENU</U></b></h1>
+    <div class="container"><div class="row">
+
+        <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/burger.jpeg" class="card-img-top" alt="..."height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Single-Burger</h5>
+                <P style="text-align:center ;">$110</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(110)">ORDER NOW</button></center>
+
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+            <img src="../images/cheese burger.webp" class="card-img-top" alt="..."height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Cheese Burger</h5>
+                <P style="text-align:center ;">$200</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(200)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+          </div>
+
+          
+          <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+            <img src="../images/sauceburger.jpeg" class="card-img-top" alt="..."height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Saucy-Burger</h5>
+                <P style="text-align:center ;">$160</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(160)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+          <img src="../images/pizza.webp" class="card-img-top" alt="..."height="210px">
+          <div class="card-body">
+              <h5 style="text-align: center;" class="card-title">Pizza</h5>
+              <P style="text-align:center ;">$100</P>
+           <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(100)">ORDER NOW</button></center>
+
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/sandwich.jpeg" class="card-img-top" alt="..."height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Club Sandwich</h5>
+                <P style="text-align:center ;">$150</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(150)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/wings.jpeg" class="card-img-top" alt="..."height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Chicken Wings</h5>
+                <P style="text-align:center ;">$170</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(170)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/white ceramictray.webp" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">White Ceramic Tray</h5>
+                <P style="text-align:center ;">$140</P>
+             <center><button type="button" class="btn btn-warning btn-lg"  onclick="addtocart(140)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/Shawarma.jpeg" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">shawarma</h5>
+                <P style="text-align:center ;">$95</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(95)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
+            <img src="../images/grilled slice.webp" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Grilled Slice</h5>
+                <P style="text-align:center ;">$120</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(120)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+    </div></div>
+<br>
+
+<h1 style="text-align: center;"><b><U>ITALIAN'S MENU</U></b></h1>
+    <div class="container"><div class="row">
+
+        <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+            <img src="../images/pasta.jpeg" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Pasta</h5>
+                <P style="text-align:center ;">$150</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(150)">ORDER NOW</button></center>
+
+            </div>
+          </div>
+          </div>
+          
+          <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+            <img src="../images/lasagna.webp" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Lasagna</h5>
+                <P style="text-align:center ;">$110</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(110)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+          </div>
+
+
+          <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+          <img src="../images/risotto.jpeg" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+              <h5 style="text-align: center;" class="card-title">Risotto Alla Milanese.</h5>
+              <P style="text-align:center ;">$180</P>
+           <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(180)">ORDER NOW</button></center>
+
+          </div>
+        </div>
+      </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+            <img src="../images/arancini.jpeg" class="card-img-top" alt="..." height="210px">
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">Arancini With Sauce</h5>
+                <P style="text-align:center ;">$140</P>
+             <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(140)">ORDER NOW</button></center>
+  
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+          <img src="../images/avacadotoast.jpeg" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+              <h5 style="text-align: center;" class="card-title">Avacado Toast</h5>
+              <P style="text-align:center ;">$70</P>
+           <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(70)">ORDER NOW</button></center>
+
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4"><div class="card" style="width: 18rem;" data-aos="fade-down">
+          <img src="../images/chickenmeat.webp" class="card-img-top" alt="..." height="210px">
+          <div class="card-body">
+              <h5 style="text-align: center;" class="card-title">Chicken Meat Dish</h5>
+              <P style="text-align:center ;">$150</P>
+           <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(150)">ORDER NOW</button></center>
+
+          </div>
+        </div>
+        </div>
+
+    </div></div>
+<br>
+
+<h1 style="text-align: center;"><b><U>CHINESE MENU</U></b></h1>
+<div class="container"><div class="row">
+
+   
+
+    <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/Szechwan Chilli Chicken..jpeg" class="card-img-top" alt="..." height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Szechwan Chilli Chicken.</h5>
+            <P style="text-align:center ;">$150</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(150)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+     </div>
+
+     <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/Stir Fried Tofu with Rice..jpeg" class="card-img-top" alt="..."height="210px" >
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Stir Fried Tofu with Rice.</h5>
+            <P style="text-align:center ;">$110</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(110)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+     </div>
+
+     <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/oysters.jpeg" class="card-img-top" alt="..."height="210px" >
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Delicious Oysters</h5>
+            <P style="text-align:center ;">$100</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(100)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+     </div>
+
+     <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/Kung-Pao-Chicken-1.jpg" class="card-img-top" alt="..." height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Kung Pao Chicken.</h5>
+            <P style="text-align:center ;">$120</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(120)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+     </div>
+
+     <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+      <img src="../images/sushi.webp" class="card-img-top" alt="..."height="210px" >
+      <div class="card-body">
+          <h5 style="text-align: center;" class="card-title">Sushi.</h5>
+          <P style="text-align:center ;">$80</P>
+       <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(80)">ORDER NOW</button></center>
+
+      </div>
+    </div>
+   </div>
+
+   <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+    <img src="../images/ricemeal.jpeg" class="card-img-top" alt="..."height="210px" >
+    <div class="card-body">
+        <h5 style="text-align: center;" class="card-title">Rice Meal.</h5>
+        <P style="text-align:center ;">$100</P>
+     <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(100)">ORDER NOW</button></center>
+
+    </div>
+  </div>
+ </div>
+
+</div></div>
+<br>
+
+<h1 style="text-align: center;"><b><U>APPETIZERS</U></b></h1>
+<div class="container"><div class="row">
+
+   
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="../images/Hors d' oeuvres..jpeg" class="card-img-top" alt="..."height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Hors d' oeuvres.</h5>
+            <P style="text-align:center ;">$90</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(90)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <img src="../images/Dumpling.jpeg" class="card-img-top" alt="..."height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Dumplings</h5>
+            <P style="text-align:center ;">$85</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(85)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+      <img src="../images/Soup & Consommé.jpeg" class="card-img-top" alt="..."height="210px">
+      <div class="card-body">
+          <h5 style="text-align: center;" class="card-title">Soup & Consomme</h5>
+          <P style="text-align:center ;">$80</P>
+       <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(80)">ORDER NOW</button></center>
+
+      </div>
+    </div>
+    </div>
+
+   
+
+    
+</div></div>
+<br>
+
+<h1 style="text-align: center;"><b><U>DESERTS</U></b></h1>
+<div class="container"><div class="row">
+
+   
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+        <img src="../images/ice.jpg" class="card-img-top" alt="..."height="210px" >
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Ice creams.</h5>
+            <P style="text-align:center ;">$25</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(25)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+        <img src="../images/chocolatecake.jpeg" class="card-img-top" alt="..."height="210px" >
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Chocolate Cake .</h5>
+            <P style="text-align:center ;">$60</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(60)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="fade-down">
+        <img src="../images/Pancake.jpeg" class="card-img-top" alt="..."height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Pan-Cake</h5>
+            <P style="text-align:center ;">$50</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(50)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+</div></div>
+<br>
+<h1 style="text-align: center;"><b><U>DRINKS</U></b></h1>
+<div class="container"><div class="row">
+
+   
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/lemonade.jpeg" class="card-img-top" alt="..." height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">lemonade.</h5>
+            <P style="text-align:center ;">$20</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(20)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+      
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/coffee.webp" class="card-img-top" alt="..."height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Coffee .</h5>
+            <P style="text-align:center ;">$30</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(30)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4"><div class="card" style="width: 18rem;"data-aos="zoom-out">
+        <img src="../images/cola.jpeg" class="card-img-top" alt="..." height="210px">
+        <div class="card-body">
+            <h5 style="text-align: center;" class="card-title">Coca Cola</h5>
+            <P style="text-align:center ;">$10</P>
+         <center><button type="button" class="btn btn-warning btn-lg" onclick="addtocart(10)">ORDER NOW</button></center>
+
+        </div>
+      </div>
+      </div>
+
+</div></div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span style="color: purple;">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="https://www.google.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-google"></i>
+      </a>
+      <a href="https://www.instagram.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/" class="me-4 text-reset"target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <a href="../keansberg.html">
+          <img src="../images/Keansberg Park.png" class="img-thumbnail" alt="...">
+        </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Rides And Attraction
+          </h6>
+          <p>
+            <a href="./ride.html" class="text-reset">All Rides</a>
+          </p>
+          <p>
+            <a href="./ride.html" class="text-reset">High Intensity</a>
+          </p>
+          <p>
+            <a href="./ride.html" class="text-reset">Medium Intensity</a>
+          </p>
+          <p>
+            <a href="./ride.html" class="text-reset">Low Intensity</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Tickets and Prices
+          </h6>
+          <p>
+            <a href="./ticket.html" class="text-reset">Tickets</a>
+          </p>
+          <p>
+            <a href="./ticket.html" class="text-reset">Membership cards</a>
+          </p>
+          <p>
+            <a href="./ticket.html" class="text-reset">Family Packages</a>
+          </p>
+          <p>
+            <a href="./ticket.html" class="text-reset">Discounts</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+        Food
+          </h6>
+          <p>
+            <a href="./food.html" class="text-reset">All types of Food</a>
+          </p>
+          <p>
+            <a href="./food.html" class="text-reset">Chinese</a>
+          </p>
+          <p>
+            <a href="./food.html" class="text-reset">Italian</a>
+          </p>
+          <p>
+            <a href="./food.html" class="text-reset">Fast Food</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: #A8C2E1">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/"><span style="color: #314ACD;">Keansburg Park</span></a>Privacy policy
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->  
+       
+
+
+
+ </body>
+ <script>
+  var totalprice=0
+    var counter=0
+    function addtocart(price)
+    {
+        counter=counter+1
+        totalprice=totalprice+price
+        document.getElementById("demo").innerHTML=totalprice
+        document.getElementById("demo0").innerHTML=counter
+        localStorage.setItem("totalprice",totalprice)
+    }
+  </script>
+ <script>
+  AOS.init();
+</script>
+ </html>
